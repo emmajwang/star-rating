@@ -5,7 +5,7 @@ class StarRating extends HTMLElement {
   }
   #render() {
     console.log("hi");
-    this.innnerHTML = "<p>hi</p>";
+    this.innerHTML = "<p>hi</p>";
   }
 }
 
