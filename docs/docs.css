@@ -1,0 +1,40 @@
+:root {
+  --secondary-color: #275a77;
+}
+
+.header-links > a {
+  color: white;
+  background: var(--secondary-color);
+  text-decoration: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.header-links > a:hover {
+  background: white;
+  color: black;
+}
+
+body {
+  font-family: "Helvetica Neue";
+  padding: 10px;
+  background: #e7ecef;
+  font-size: 14pt;
+}
+
+mark {
+  background: none;
+  font-style: italic;
+}
+
+li {
+  padding: 2px;
+}
+
+.demo-code {
+  display: block;
+  border: 1px solid black;
+  padding: 1em;
+}

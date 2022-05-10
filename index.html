@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Star Rating Component API</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="/src/StarRating.js" type="module"></script>
+  </head>
+  <header>
+    <div class="header-links">
+      <a href="/index.html">Home</a>
+      <a href="/docs/docs.html">Docs</a>
+    </div>
+    <h1>Star Rating Component <star-rating rating="5"></star-rating></h1>
+  </header>
+  <body>
+    <p>Use this component to add a star rating to your project.</p>
+    <article class="demo">
+      <code class="demo-code">
+        &ltstar-rating rating="3">&lt/star-rating>
+      </code>
+      <star-rating rating="3"></star-rating>
+    </article>
+    <article class="demo">
+      <p>
+        You can set the number of stars given, and the number of stars that the
+        rating is out of.
+      </p>
+      <code class="demo-code">
+        &ltstar-rating rating="7" outof="10">&lt/star-rating>
+      </code>
+      <star-rating rating="7" outof="10"></star-rating>
+    </article>
+    <article class="demo">
+      <p>You can also choose the emoji used to display the rating.</p>
+      <code class="demo-code">
+        &ltstar-rating rating="5" emoji="🤠">&lt/star-rating>
+      </code>
+      <star-rating rating="5" emoji="🤠"></star-rating>
+      <p>
+        Note that if you choose your own emoji instead of using the default
+        stars, you cannot choose a number that the rating is out of.
+      </p>
+    </article>
+    <article class="demo">
+      <p>You can use any Unicode character as your rating emoji.</p>
+      <code class="demo-code">
+        &ltstar-rating rating="3" emoji="🍤">&lt/star-rating>
+      </code>
+      <star-rating rating="3" emoji="🍤"></star-rating>
+      <p>
+        You can browse the list of Unicode characters at
+        <a
+          href="https://www.vertex42.com/ExcelTips/unicode-symbols.html"
+          target="_blank"
+          >this website</a
+        >.
+      </p>
+    </article>
+    <article class="demo">
+      <p>
+        You can also update the attributes of your star rating component using
+        JavaScript.
+      </p>
+      <pre><code class="demo-code">&ltstar-rating id="ratingToChange" rating="2" outof="5">&lt/star-rating>
+&ltscript>
+    let ratingToChange = document.getElementById("ratingToChange");
+    ratingToChange.setAttribute("rating", 4);
+&lt/script></code></pre>
+      <star-rating id="ratingToChange" rating="2" outof="5"></star-rating>
+      <script>
+        let ratingToChange = document.getElementById("ratingToChange");
+        ratingToChange.setAttribute("rating", 4);
+      </script>
+    </article>
+  </body>
+</html>

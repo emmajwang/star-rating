@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Star Rating Component API</title>
+    <link rel="stylesheet" href="docs.css" />
+    <script src="/src/StarRating.js" type="module"></script>
+  </head>
+  <header>
+    <div class="header-links">
+      <a href="/index.html">Home</a>
+      <a href="/docs/docs.html">Docs</a>
+    </div>
+    <h1>Star Rating Component <star-rating rating="5"></star-rating></h1>
+  </header>
+  <body>
+    <h2>Getting Started</h2>
+    <p>
+      To use the star rating component, add the following to the head section of
+      your HTML file.
+    </p>
+    <code class="demo-code"
+      >&ltscript src="https://emmajwang.github.io/star-rating/src/StarRating.js"
+      type="module">&lt/script></code
+    >
+    <h2>Attributes</h2>
+    <article>
+      <h3><code>rating</code></h3>
+      <p>The rating is the number of symbols that will appear.</p>
+      <p>
+        If <code>rating</code> is larger than <code>outof</code>, then upon
+        display <code>rating</code> will be overridden to the maximum number of
+        stars (<code>outof</code> stars).
+      </p>
+    </article>
+    <article>
+      <h3><code>outof</code></h3>
+      <p>The number of symbols that the rating is out of.</p>
+      <p>
+        If <code>emoji</code> is specified, then <code>outof</code> will have no
+        effect. If <code>emoji</code> is not specified, then
+        <code>outof</code> minus <code>rating</code> empty stars will be
+        displayed after the shaded stars that represent the rating.
+      </p>
+    </article>
+    <article>
+      <h3><code>emoji</code></h3>
+      <p>
+        The symbol used to represent the rating. <code>emoji</code> can be any
+        Unicode character.
+      </p>
+    </article>
+  </body>
+</html>
